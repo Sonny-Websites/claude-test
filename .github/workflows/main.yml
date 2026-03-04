@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Claude Code
         id: run_claude
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@01e756b2694726f5950a7c9285437887e504c5a1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           # We tell Claude to fix the code but NOT create its own PR, 
