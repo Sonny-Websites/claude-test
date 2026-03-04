@@ -27,7 +27,8 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: "Resolve this issue: ${{ github.event.issue.body }}. Apply the fix to the local files."
-
+          show_full_output: true
+          
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v6
